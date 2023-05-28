@@ -1,11 +1,15 @@
-import './ExpenseDetails.css';
-export const ExpenseDetails = (props)=>{
-    const {amount,location,title} = props; 
+import React from 'react';
+import './Expenseitem.css';
+ const ExpenseDetails = (props)=>{
         return (
-            <div className='expense-item__details'>
-                <div className='expense-item__title'>{title}</div>
-                <div className='expense-item__location'>{location}</div>
-                <div className='expense-item__amount'>{amount}</div>
+            <div className='expense-item__description'>
+                <h2>{props.title}</h2>
+                <div className='expense-item__location'>
+                    <h2>{props.location}</h2> </div>
+                <div className='expense-item__price'>${props.amount}</div>
                 </div>
+                
         );
 }
+
+export default ExpenseDetails;
