@@ -5,7 +5,7 @@ import Card from "../UI/Card";
 import './Expenses.css';
 import ExpensesList from './ExpensesList';
 const Expenses = (props) => {
-  console.log(props.item, "IN Expenses");
+  // console.log(props.item, "IN Expenses");
   const [filteredYear, setFilteredYear] = useState('2020');
   const filterChangeHandler = selectedYear => {
     setFilteredYear(selectedYear);
